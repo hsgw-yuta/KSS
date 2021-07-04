@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/Reading_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_view"
+            android:tint="@color/colorRed"
+            android:background="@drawable/button_circle_black"
+            android:text="閲覧" />
+
+
+        <ImageButton
+            android:id="@+id/Add_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_circle_white"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@color/colorGreen"
+            android:text="追加" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/entry_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="閲覧を押すと表示されます。"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/All_Delete_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全て削除" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="※注意   このボタンを押すと登録されている全ての情報が消えます"
+            android:textColor="@color/colorRed"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

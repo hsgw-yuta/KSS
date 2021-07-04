@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HEW</string>
+    <string name="i_check_name">check</string>
+    <string name="i_days_name">days</string>
+    <string name="i_count_name">count</string>
+    <string name="i_left_name">leftdata</string>
+    <string name="i_right_name">rightdata</string>
+    <string name="i_setdata_name">setdata</string>
+    <string name="i_intervaldata_name">intervaldata</string>
+    <string name="i_indata_name">in_data</string>
+
+</resources>

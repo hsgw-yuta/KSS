@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/traning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/chang_left"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_previous"
+                        android:tint="@color/colorBlack"
+                        android:background="@drawable/menu_button" />
+
+                    <ImageButton
+                        android:id="@+id/btn_fukkin"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/menu_button"
+                        android:src="@mipmap/fukkin" />
+
+                    <ImageButton
+                        android:id="@+id/btn_danbel"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/menu_button"
+                        android:src="@mipmap/danbel" />
+
+                    <ImageButton
+                        android:id="@+id/btn_run"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/menu_button"
+                        android:src="@mipmap/running" />
+
+                    <ImageButton
+                        android:id="@+id/chang_right"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_next"
+                        android:tint="@color/colorBlack"
+                        android:background="@drawable/menu_button" />
+
+                    <ImageButton
+                        android:id="@+id/button"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@mipmap/memo2"
+                        android:background="@drawable/menu_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/watch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlack"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/white_feam"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="80sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/stop_button"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="80dp"
+                                android:background="@drawable/button_circle_white"
+                                android:text="stop" />
+
+                            <Button
+                                android:id="@+id/start_button"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="200dp"
+                                android:layout_marginTop="80dp"
+                                android:background="@drawable/button_circle_white"
+                                android:text="start" />
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/rap_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:layout_marginTop="50dp">
+
+                        </ListView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/carender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CalendarView
+                        android:id="@+id/calenderView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="確認したい日付をクリックしてください。" />
+
+                    <ListView
+                        android:id="@+id/db_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/camera_button"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:text="カメラ起動"
+                        android:background="@drawable/menu_button"
+                        android:src="@mipmap/kamera"/>
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="30dp"
+                        android:contentDescription="camera picture"
+                        android:scaleType="fitCenter" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>

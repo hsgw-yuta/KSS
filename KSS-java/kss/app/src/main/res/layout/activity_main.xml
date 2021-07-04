@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:text="筋トレ"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:textSize="50sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="  ユーザーネーム"
+        android:textColorHint="#000000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:background="@drawable/black_fream"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            >
+
+            <EditText
+                android:id="@+id/h_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:text="身長を入力"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:text="cm"
+                android:gravity="right"
+                android:textColor="@color/colorBlack"/>
+
+    <SeekBar
+                android:id="@+id/seekBar_height"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="210"
+                android:thumb="@mipmap/ic_launcher_round"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="30dp">
+
+            <EditText
+                android:id="@+id/w_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:text="体重を入力"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:text="kg"
+                android:gravity="right"
+                android:textColor="@color/colorBlack"/>
+
+            <SeekBar
+                android:id="@+id/seekBar_weight"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:max="210"
+                android:thumb="@mipmap/ic_launcher_round"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/buttn_grdation"
+        android:text="ログイン" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:text="-------------------------　または   -------------------------"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="ヘルプが必要な場合"/>
+
+</LinearLayout>

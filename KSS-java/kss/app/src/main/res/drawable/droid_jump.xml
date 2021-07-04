@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:visible="true">
+
+    <item
+        android:drawable="@drawable/ay_andtips14_fig01"
+        android:duration="750" />
+    <item
+        android:drawable="@drawable/ay_andtips14_fig02"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/ay_andtips14_fig03"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/ay_andtips14_fig04"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/ay_andtips14_fig05"
+        android:duration="500" />
+
+</animation-list>
